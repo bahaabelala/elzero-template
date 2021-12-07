@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online calculator 2</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th><a onclick="clr()">C</a></th>
+                    <th colspan="3">
+                        <input type="text" id="calcscreen" value="0" disabled/>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a onclick="addToScreen('7')">7</a></td>
+                    <td><a onclick="addToScreen('8')">8</a></td>
+                    <td><a onclick="addToScreen('9')">9</a></td>
+                    <td><a onclick="addToScreen('+')">+</a></td>
+                </tr>
+                <tr>
+                    <td><a onclick="addToScreen('4')">4</a></td>
+                    <td><a onclick="addToScreen('5')">5</a></td>
+                    <td><a onclick="addToScreen('6')">6</a></td>
+                    <td><a onclick="addToScreen('-')">-</a></td>
+                </tr>
+                <tr>
+                    <td><a onclick="addToScreen('1')">1</a></td>
+                    <td><a onclick="addToScreen('2')">2</a></td>
+                    <td><a onclick="addToScreen('3')">3</a></td>
+                    <td><a onclick="addToScreen('*')">*</a></td>
+                </tr>
+                <tr>
+                    <td><a onclick="addToScreen('0')">0</a></td>
+                    <td><a onclick="addToScreen('.')">.</a></td>
+                    <td><a onclick="addToScreen('/')">/</a></td>
+                    <td><a onclick="solve()">=</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="js/action.js"></script>
+    </body>
+</html>

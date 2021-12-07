@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14pt;
+}
+
+/* ============
+    COMMON
+   ============ */
+
+.signup-btn {
+    border: 1px solid #007bff;
+    color: #007bff;
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.signup-btn:hover,
+.signup-btn:focus {
+    background-color: #006ee4;
+    border-color: #006ee4;
+    color: #fff;
+}
+
+.flexbox-parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 900px;
+}
+
+a:link,
+a:visited {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    transition: text-shadow 0.3s, color 0.3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-shadow: 0 0 25px #006ee4;
+    color: #000;
+}
+
+/* ============
+    HEADER
+   ============ */
+
+header {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #212529;
+    background-color: #fff;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 0 50px;
+    box-shadow: 0 1px 5px #6c757d23;
+    user-select: none;
+}
+
+header .page-title {
+    flex-grow: 1;
+    font-size: 1.4em;
+}
+
+header a:link,
+header a:visited {
+    margin: 0 5px;
+    color: #212529;
+    font-size: 0.9em;
+}
+
+header .signup-btn {
+    height: 40px;
+    width: 90px;
+    margin-left: 30px;
+    font-size: 1em;
+}
+
+/* ============
+    MAIN
+   ============ */
+
+main {
+    text-align: center;
+    padding: 75px 0;
+    position: relative;
+}
+
+/* --- ADDRESS SECTION --- */
+
+.address-sec h1 {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.address-sec p {
+    color: #212529;
+    font-weight: 300;
+    max-width: 673px;
+    width: 90%;
+    line-height: 170%;
+    margin: 10px auto;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+/* --- PRICES SECTION --- */
+
+.prices-sec {
+    margin: 50px auto 75px auto;
+}
+
+.prices-sec div {
+    flex: 1 1 275px;
+    margin: 10px;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 1px 5px #6c757d23;
+    border-radius: 5px;
+    user-select: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.prices-sec div:hover {
+    background-color: #6c757d09;
+    box-shadow: 0 1px 20px #6c757d1f;
+}
+
+.prices-sec div h2 {
+    vertical-align: middle;
+    line-height: 60px;
+    height: 60px;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+
+.prices-sec div h1 {
+    font-size: 2.3em;
+    margin: 25px 0 10px 0;
+}
+
+.prices-sec div p {
+    font-size: 1em;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+
+.prices-sec button {
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    transition: top 0.1s, opacity 0.2s, background-color 0.2s, border 0.2s,
+        color 0.2s;
+}
+
+.prices-sec div:hover button {
+    top: 0;
+    opacity: 1;
+}
+
+.prices-sec .signup-btn {
+    height: 50px;
+    width: 90%;
+    font-size: 1.2em;
+    margin: 25px auto 15px auto;
+}
+
+.prices-sec .pro-btn,
+.prices-sec .enterprise-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.prices-sec .pro-btn:hover,
+.prices-sec .enterprise-btn:hover,
+.prices-sec .pro-btn:focus,
+.prices-sec .enterprise-btn:focus {
+    background-color: #006ee4;
+    border-color: #006ee4;
+}
+
+/* ===========
+    FOOTER
+   =========== */
+
+footer section {
+    padding: 25px 25px 100px 25px;
+    border-top: 1px solid #dfdfdf;
+    margin: 0 auto;
+}
+
+footer div {
+    flex: 1 1 200px;
+    margin-top: 25px;
+}
+
+footer .copyright {
+    font-weight: 300;
+    font-size: 0.8em;
+    padding-top: 10px;
+    color: #6c757d;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer a {
+    line-height: 140%;
+    font-size: 0.8em;
+    color: #6c757d;
+}

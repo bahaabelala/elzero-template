@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img/Slider.PNG" />
+        <title>Create Slider</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/media.css" />
+    </head>
+    <body>
+        <section class="slider">
+            <a class="slider__arrow" onclick="slideLeft()"></a>
+            <div class="slider__slide--1 slide current">
+                <h1 class="slide__heading">Example headline 1</h1>
+                <p class="slide__para">
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                    Donec id elit non mi porta gravida at eget metus. Nullam id
+                    dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <a href="" class="slide__btn">Sign up today</a>
+            </div>
+            <div class="slider__slide--2 slide right">
+                <h1 class="slide__heading">Example headline 2</h1>
+                <p class="slide__para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="" class="slide__btn">Sign up today</a>
+            </div>
+            <div class="slider__slide--3 slide left">
+                <h1 class="slide__heading">Example headline 3</h1>
+                <p class="slide__para">
+                    Minus mollitia eligendi molestiae omnis aliquam obcaecati ut
+                    sapiente perspiciatis molestias, ducimus voluptate ab.
+                </p>
+                <a href="" class="slide__btn">Sign up today</a>
+            </div>
+            <a class="slider__arrow" onclick="slideRight()"></a>
+        </section>
+
+        <script src="js/action.js"></script>
+    </body>
+</html>

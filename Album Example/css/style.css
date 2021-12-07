@@ -1,0 +1,378 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: #6c757d;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #b3b3b3;
+}
+
+::-webkit-scrollbar-thumb {
+    border-left: 2px solid #a0a0a0;
+    border-right: 2px solid #a0a0a0;
+    background-color: #6c757d;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #55595c;
+}
+
+/* ----- HEADER ----- */
+
+header {
+    border-bottom: 1px groove rgb(214, 214, 214);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header section {
+    width: 100%;
+    color: white;
+    background-color: #343a40;
+}
+
+header .menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 0 7%;
+    height: 0;
+    transition: all 0.5s;
+}
+
+.menu-section.open-menu {
+    padding: 2% 7%;
+    height: 179.06px;
+}
+
+header .about {
+    width: 60%;
+}
+
+header .contact {
+    width: 20%;
+}
+
+header h2 {
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+header p {
+    color: #6c757d;
+    line-height: 135%;
+    letter-spacing: 0.5px;
+}
+
+header ul li {
+    list-style: none;
+    margin: 7px 0;
+    letter-spacing: 0.3px;
+}
+
+header ul a:visited,
+header ul a:link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+}
+
+header ul a:active {
+    color: #6c757d;
+}
+
+header .logo-section {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+header .logo img:first-of-type {
+    width: 35px;
+    height: auto;
+    grid-area: img;
+    margin-top: -5px;
+}
+
+header .logo h1 {
+    grid-area: h1;
+    margin-left: 5px;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+}
+
+header .logo {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-areas: 'img h1';
+    position: absolute;
+    left: 7%;
+}
+
+header img:last-of-type {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    right: 7%;
+    cursor: pointer;
+}
+
+/* ----- MAIN ----- */
+
+/* --- ADDRESS SECTION --- */
+main .address-section {
+    text-align: center;
+    padding-top: 125px;
+    width: 100%;
+    height: calc(100vh - 65px);
+    font-style: normal;
+    background-image: url(../img/wallpaper.jpg);
+    background-color: rgb(47, 50, 53);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main .address-section h1 {
+    font-size: 45pt;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0 0 5px #343a40;
+}
+
+main .address-section p {
+    width: 58%;
+    font-weight: 300;
+    margin: 5% auto;
+    line-height: 150%;
+    font-size: 18pt;
+    word-spacing: 2px;
+    color: #dddddd;
+    text-shadow: 0 0 5px #343a40;
+}
+
+main .address-section button {
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14pt;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #343a40;
+    transition: background-color 0.5s;
+}
+
+main .address-section .main-btn {
+    background-color: #007bff;
+    outline: none;
+    border: 1px solid #005bbd;
+}
+
+main .address-section .main-btn:hover {
+    background-color: #005bbd;
+}
+
+main .address-section .main-btn:active {
+    background-color: #00458f;
+}
+
+main .address-section .secondary-btn {
+    background-color: #6c757d;
+    outline: none;
+    border: 1px solid #4e555a;
+    margin-left: 10px;
+}
+
+main .address-section .secondary-btn:hover {
+    background-color: #4e555a;
+}
+
+main .address-section .secondary-btn:active {
+    background-color: #383d41;
+}
+
+/* --- ADDRESS SECTION --- */
+main .albums-section {
+    padding: 50px 7%;
+    background: #d1d1d1;
+    border-top: 3px groove #6c757d;
+    border-bottom: 3px groove #6c757d;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .albums-section div {
+    width: 26.5%;
+    height: 400px;
+    background-color: rgb(226, 224, 224);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+    margin: 50px 3.4%;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+main .albums-section div:hover {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+main .albums-section div img {
+    width: 120%;
+    height: auto;
+    margin-left: -10%;
+}
+
+main .albums-section div p {
+    margin: 15px 15px 0 15px;
+    text-align: left;
+    font-size: 11pt;
+    word-spacing: 1px;
+    line-height: 160%;
+    color: rgb(36, 36, 36);
+}
+
+main .albums-section div button {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    margin: 0;
+    height: 30px;
+    width: 50px;
+    border: 1px solid #5b5c5e;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(59, 59, 59);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+main .albums-section div button:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+main .albums-section div button:active {
+    background-color: #343a40;
+}
+
+main .albums-section div .view-btn {
+    left: 15px;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+main .albums-section div .view-btn::after {
+    content: '';
+    display: block;
+    background-color: #535457;
+    height: 20px;
+    width: 1px;
+    border: none;
+    position: absolute;
+    left: 49px;
+    z-index: 1;
+}
+
+main .albums-section div .edit-btn {
+    left: 65px;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+}
+
+main .albums-section div h5 {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-weight: 300;
+    color: rgb(85, 85, 85);
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    background-color: #343a40;
+    height: 100px;
+    padding: 25px 10% 100px 10%;
+    position: relative;
+    font-size: 14pt;
+}
+
+footer p {
+    width: 68%;
+    color: #f8f9fa;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+footer p a:nth-of-type(2),
+footer p a:nth-of-type(3) {
+    color: #90c3f8;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer p a:nth-of-type(2):hover,
+footer p a:nth-of-type(3):hover {
+    color: #2f93fd;
+    text-decoration: underline;
+}
+
+footer .page-up-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    text-decoration: none;
+    font-size: 2em;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    color: #f8f9fa;
+    background-color: #343a40;
+    cursor: pointer;
+    border: 1px solid #f8f9fa;
+    transition: background-color 0.2s, color 0.5s, border 0.1s;
+}
+
+footer .page-up-link:hover {
+    background-color: #f8f9fa;
+    color: #343a40;
+    border: none;
+}
